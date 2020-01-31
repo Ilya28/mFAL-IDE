@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="522.0" minWidth="476.0" prefHeight="556.0" prefWidth="922.0" style="-fx-background-color: #303030;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar prefHeight="11.0" prefWidth="922.0" style="-fx-background-color: linear-gradient(#353535,  #343739);">
+        <items>
+            <MenuButton maxHeight="28.0" minHeight="28.0" mnemonicParsing="false" prefHeight="26.0" text="File" textFill="WHITE">
+              <items>
+                <MenuItem mnemonicParsing="false" text="New" />
+                <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Svae as" />
+                  <MenuItem mnemonicParsing="false" text="Load" />
+              </items>
+            </MenuButton>
+            <MenuButton layoutX="10.0" layoutY="10.0" maxHeight="28.0" minHeight="28.0" mnemonicParsing="false" prefHeight="26.0" text="Edit" textFill="WHITE">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Undo" />
+                  <MenuItem mnemonicParsing="false" text="Redo" />
+               </items>
+            </MenuButton>
+            <Separator orientation="VERTICAL" prefHeight="25.0" prefWidth="0.0" visible="false" />
+            <Label prefHeight="17.0" prefWidth="411.0" text="&lt;path/file&gt;" textFill="WHITE" />
+            <Button id="run-button" maxHeight="28.0" minHeight="28.0" minWidth="60.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" text="Run" textFill="WHITE" />
+            <Button id="stop-button" maxHeight="28.0" minHeight="28.0" minWidth="60.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" text="Stop" textFill="WHITE" />
+            <Button id="run-button" maxHeight="28.0" minHeight="28.0" minWidth="60.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" text="Debug" textFill="WHITE" />
+            <Button maxHeight="28.0" minHeight="28.0" minWidth="60.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" text="Steep" textFill="WHITE" />
+        </items>
+      </ToolBar>
+      <SplitPane dividerPositions="0.15659955257270694, 0.8120805369127517" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="467.0" prefWidth="878.0" stylesheets="@../../../../src/res/css/splitpane.css" VBox.vgrow="ALWAYS">
+        <items>
+            <VBox maxWidth="320.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #383838; -fx-border-style: none;" />
+            <SplitPane dividerPositions="0.7175843694493783" orientation="VERTICAL" prefHeight="565.0" prefWidth="709.0">
+              <items>
+                  <TextArea maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="120.0" minWidth="320.0" prefHeight="398.0" prefWidth="603.0" text="AAAAA">
+                     <styleClass>
+                        <String fx:value="content" />
+                        <String fx:value="text-area" />
+                     </styleClass></TextArea>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <TextFlow minHeight="1.0" prefHeight="139.0" prefWidth="627.0" style="-fx-background-color: #343739;" VBox.vgrow="ALWAYS" />
+                        <HBox prefHeight="12.0" prefWidth="603.0">
+                           <children>
+                              <TextField prefHeight="49.0" prefWidth="523.0" style="-fx-background-color: #323232;" HBox.hgrow="SOMETIMES">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button minWidth="80.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="91.0" text="Send" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+              </items>
+            </SplitPane>
+            <VBox maxWidth="320.0" prefHeight="671.0" prefWidth="182.0" style="-fx-background-color: #383838;" />
+        </items>
+      </SplitPane>
+   </children>
+   <stylesheets>
+      <URL value="@../../../../src/res/css/buttons.css" />
+      <URL value="@../../../../src/res/css/code.css" />
+      <URL value="@../../../../src/res/css/splitpane.css" />
+   </stylesheets>
+</VBox>

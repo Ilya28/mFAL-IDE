@@ -1,0 +1,69 @@
+.button ,.menu-button{
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-color: #607080;
+    -fx-border-color: transparent;
+    -fx-border-width: 2;
+    -fx-border-radius: 0;
+    /*-fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );*/
+}
+.button{-fx-border-radius: 4;}
+.menu-button{-fx-border-radius: 0;}
+.menu-button .label {-fx-text-fill: white;}
+
+.button:hover ,.menu-button:hover{
+    -fx-background-color: #708090;
+    -fx-border-color: transparent;
+}
+.button:pressed {
+    -fx-background-color: #708090;
+    -fx-border-color: #A0A0A0;
+}
+
+.menu-item {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+.menu-item:hover {
+    -fx-background-color: #505050;
+    -fx-border-width: 0;
+}
+.context-menu {
+    -fx-background-color: #343739;
+    -fx-background-radius: 2;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em; /* 4 1 8 1 */
+}
+
+#run-button {
+    -fx-background-color: #204420;
+    -fx-border-radius: 4;
+}
+#run-button:hover {
+    -fx-background-color: linear-gradient(#204420,  #405440);
+}
+#run-button:pressed {
+    -fx-border-color: green;
+}
+#stop-button {
+    -fx-background-color: #442020;
+    -fx-border-radius: 4;
+}
+#stop-button:hover {
+    -fx-background-color: linear-gradient(#442020,  #544040);
+}
+#stop-button:pressed {
+    -fx-border-color: #983636;
+}
+
+
+
+/*#stage-button {
+    -fx-text-fill: white;
+    -fx-effect: none;
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+#stage-button:hover {
+    -fx-background-color: #983636;
+    -fx-border-width: 0;
+}*/

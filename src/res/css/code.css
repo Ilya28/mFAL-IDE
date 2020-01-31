@@ -1,0 +1,28 @@
+.text-area {
+    -fx-font-family: System;
+    -fx-font-size: 12;
+    -fx-text-fill: #ffffff;
+    -fx-display-caret:true;
+
+    -fx-border-style: none;
+    -fx-background-color: #323232;
+
+    /*-fx-border-width: 0 ;
+    -fx-padding: 0 ;
+    -fx-focus-color: transparent;
+    -fx-border-style: none;
+    -fx-background-radius: 0.0px;
+    -fx-border-radius: 0.0px;*/
+}
+
+.text-area .content {
+    -fx-background-color: #323232;
+}
+
+.text-area .scroll-pane {
+
+}
+
+.text-field {
+    -fx-text-fill: #ffffff;
+}
